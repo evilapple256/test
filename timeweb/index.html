@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>ne221117</title>
+        <script>
+            let price = 1000;
+        </script>
+        <script src="calctax.js"></script>
+    </head>
+    <body>
+        <h1>NE22-1117B</h1>
+        <hr>
+        <h1><script>document.write(price);</script></h1>
+        <button onclick="calcTax(price,8);">テイクアウト</button>
+        <button onclick="calcTax(price,10);">イートイン</button>
+
+        <hr>
+
+        <label>値段　　　：<input type="text" id="nedan" size="10" value="1000"></label><br>
+        <label>税率（％）：<input type="text" id="zeiritu" size="10" value="8"></label>
+        <button onclick="tax();">計算</button>
+    </body>
+</html>
